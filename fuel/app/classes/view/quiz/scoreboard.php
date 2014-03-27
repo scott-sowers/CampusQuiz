@@ -1,6 +1,6 @@
 <?php
 
-use \Model\Quizservice;
+use \Model\QuizService;
 
 class View_Quiz_Scoreboard extends \ViewModel
 {
