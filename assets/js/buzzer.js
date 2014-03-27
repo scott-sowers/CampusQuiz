@@ -19,7 +19,7 @@
         var teamSlug = getTeamSlug(teamName);
 
         var response = $.ajax({
-            url: 'http://ciscoquiz.ssowers.com/pusher/event.json?event=team-answer&teamName='
+            url: '/pusher/event.json?event=team-answer&teamName='
                 + teamName + '&teamSlug=' + teamSlug
         });
     }
@@ -32,7 +32,7 @@
         var teamSlug = getTeamSlug(teamName);
 
         var response = $.ajax({
-            url: 'http://ciscoquiz.ssowers.com/pusher/event.json?event=register-team&teamName='
+            url: '/pusher/event.json?event=register-team&teamName='
                 + teamName + '&teamSlug=' + teamSlug
         });
 
