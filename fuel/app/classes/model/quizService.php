@@ -27,7 +27,7 @@ class Quizservice
             $question->setPoints(PointsMapper::loadByQuestionId($qid));
             $question->setCategory(CategoryMapper::loadByQuestionId($qid));
         }
-
+ 
         return $questions;
     }
     
