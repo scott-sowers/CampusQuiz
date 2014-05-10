@@ -13,7 +13,7 @@ class Pusher extends \Controller_Rest
             'teamName' => Input::get('teamName'),
             'teamSlug' => Input::get('teamSlug')
         );
-        Pusherapp::forge()->trigger('cisco-quiz', Input::get('event'), $data);
+        Pusherapp::forge()->trigger('cisco-eng-quiz', Input::get('event'), $data);
         return $this->response();
     }
 }

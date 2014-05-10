@@ -14,7 +14,7 @@
     }
 
     var pusher = new Pusher('09aae1bb5ce4cc532936');
-    var channel = pusher.subscribe('cisco-quiz');
+    var channel = pusher.subscribe('cisco-eng-quiz');
 
     // Listens for the 'register-team' pusher
     channel.bind('register-team', function (data) {
@@ -117,7 +117,7 @@
     // Places the newly created teams html to the dom
     function addTeamHTML(teamName, teamSlug, teamPoints) {
         jQuery('<div id="' + teamSlug + '" class="fluid-row team"><div class="span4 team-score">' + teamPoints + '</div><div class="span8 team-name">' + teamName + '<i class="icon-remove" id="remove-' + teamSlug +'"></i></div><div class="clear"></div></div>').appendTo('#registered-teams');
-        
+
         // Bind event to remove team from leaderboard
         $('i#remove-'+teamSlug).click(function(e) {
             console.log('foo');
@@ -134,7 +134,7 @@
         if (currentQuestion.length != 0) {
             var team = $('.active-question #team-answers #' + teamSlug);
             var teamOnBoard = findTeam(getTeams(),teamSlug);
-            
+
             var responseOrder = $('.active-question #team-answers li').length + 1;
 
             if (team.length == 0 && teamOnBoard >= 0) {
@@ -217,7 +217,7 @@
 
         return -1;
     }
-    
+
     function removeTeam(teamSlug) {
         var teamArray = getTeams();
         var thisTeamIndex = findTeam(teamArray,teamSlug);

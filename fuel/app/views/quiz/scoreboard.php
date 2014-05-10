@@ -8,7 +8,7 @@
             <div id="start-quiz" class="quizbox">
                 <h1>Cisco Quiz</h1>
                 <ol id="instructions">
-                    <li>Go to <a href="ciscoquiz.ssowers.com">ciscoquiz.ssowers.com</a></li>
+                    <li>Go to <a href="ciscoquiz.ssowers.com">cisco-eng-quiz.ssowers.com</a></li>
                     <li>Enter your team name</li>
                     <li>Click "Register"</li>
                     <li>Click "Answer" when you know the answer to a question</li>
@@ -36,7 +36,7 @@
             <div id="questions" class="quizbox hidden">
                 <?php foreach ($questions as $question) :?>
                 <div id="question<?php echo $question->getPoints()->getId() . $question->getCategory()->getId(); ?>" class="question-container hidden">
-                    <h1><?php echo stripslashes($question->getCategory()->getName()); ?> 
+                    <h1><?php echo stripslashes($question->getCategory()->getName()); ?>
                         <small class="question-value"><span class="points"><?php echo $question->getPoints()->getValue() ?></span> Points</small></h1>
                     <div class="question lead"><?php echo stripslashes($question->getQuestion()); ?></div>
                     <div class="answer hidden">
