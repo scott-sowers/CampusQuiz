@@ -6,7 +6,7 @@
 return array(
 	'default' => array(
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=ciscoquizss',
+			'dsn'        => 'mysql:host=localhost;dbname=eng_quiz',
 			'username'   => 'ytk',
 			'password'   => 'ytk',
 		),
