@@ -8,7 +8,7 @@
             <div id="start-quiz" class="quizbox">
                 <h1>Cisco Quiz</h1>
                 <ol id="instructions">
-                    <li>Go to <a href="ciscoquiz.ssowers.com">ciscoquiz.ssowers.com</a></li>
+                    <li>Go to <a href="ciscoquiz.ssowers.com">marketing-quiz.ssowers.com</a></li>
                     <li>Enter your team name</li>
                     <li>Click "Register"</li>
                     <li>Click "Answer" when you know the answer to a question</li>
