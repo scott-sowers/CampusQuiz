@@ -14,7 +14,7 @@
     }
 
     var pusher = new Pusher('09aae1bb5ce4cc532936');
-    var channel = pusher.subscribe('cisco-quiz');
+    var channel = pusher.subscribe('marketing-quiz');
 
     // Listens for the 'register-team' pusher
     channel.bind('register-team', function (data) {
