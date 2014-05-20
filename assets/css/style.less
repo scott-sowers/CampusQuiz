@@ -137,10 +137,15 @@ body {
             }
             #question-matrix {
                 .answered {
-                    background-color: #efefef;
-                    color: #efefef;
-                    &:hover {
+                    a {
                         color: white;
+                    }
+                    
+                    &:hover a {
+                        color: #08c;
+                        &:hover {
+                            color: #005580;
+                        }
                     }
                 }
                 font-size: 24px;
